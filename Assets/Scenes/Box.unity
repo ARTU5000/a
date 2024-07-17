@@ -15357,8 +15357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344f01300c0986044a45e1d545cba233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plain1: {fileID: 1387296790}
-  plain2: {fileID: 1539069844}
+  plain1: {fileID: 1539069844}
+  plain2: {fileID: 1387296790}
   plain3: {fileID: 1467340978}
 --- !u!1001 &1681170781
 PrefabInstance:
