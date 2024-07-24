@@ -12,18 +12,18 @@ public class Decaedro : MonoBehaviour
     private void CreateDecaedro()
     {
         Vector3[] vertices = {
-            new Vector3(0, 1, 0),
-            new Vector3(1, .1f, 0),
-            new Vector3(.8f, -.1f, .6f),
-            new Vector3(.3f, .1f, 1),
-            new Vector3(-.3f, -.1f, 1),
-            new Vector3(-.8f, .1f, .6f),
-            new Vector3(-1f, -.1f, 0),
-            new Vector3(-.8f, .1f, -.6f),
-            new Vector3(-.3f, -.1f, -1),
-            new Vector3(.3f, .1f, -1),
-            new Vector3(.8f, -.1f, -.6f),
-            new Vector3(0, -1, 0) 
+            new Vector3(0, 1, 0),         //0
+            new Vector3(1, .1f, 0),       //1
+            new Vector3(.8f, -.1f, .6f),  //2
+            new Vector3(.3f, .1f, 1),     //3
+            new Vector3(-.3f, -.1f, 1),   //4
+            new Vector3(-.8f, .1f, .6f),  //5
+            new Vector3(-1f, -.1f, 0),    //6
+            new Vector3(-.8f, .1f, -.6f), //7
+            new Vector3(-.3f, -.1f, -1),  //8
+            new Vector3(.3f, .1f, -1),    //9
+            new Vector3(.8f, -.1f, -.6f), //10
+            new Vector3(0, -1, 0)         //11
         };
 
         int[] triangles = {
