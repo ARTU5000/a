@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 
@@ -19,30 +20,47 @@ public class Flauros : MonoBehaviour
         Vector3[] vertices = {
             new Vector3(0, 0, 0),         //0
             new Vector3(.8f, 0, 0),       //1
-            new Vector3(.4f, 0, .7f),  //2
+            new Vector3(.4f, 0, .7f),     //2
             new Vector3( 0, .8f, .4f),    //3
             new Vector3(.8f, .8f, .4f),   //4
-            new Vector3(.4f, .8f, -.3f)  //5
+            new Vector3(.4f, .8f, -.3f),  //5
+            new Vector3(.8f, 0, 0),       //1 - 6
+            new Vector3(.8f, 0, 0),       //1 - 7
+            new Vector3(.4f, 0, .7f),     //2 - 8
+            new Vector3( 0, .8f, .4f)     //3 - 9
         };
 
         int[] triangles = {
             0, 1, 2,
             0, 2, 3,
             0, 3, 5,
-            0, 5, 1,
-            4, 1, 5,
-            4, 2, 1,
-            4, 3, 2,
-            4, 5, 3
+            0, 5, 6,
+            4, 6, 5,
+            4, 8, 7,
+            4, 9, 8,
+            4, 5, 9
         };
 
 
-        Mesh mesh = new Mesh();
+        Vector2[] uvs = {
+            new Vector2(0.845f, 0.43f),   //0
+            new Vector2(0.96f, 0.281f),   //1
+            new Vector2(0.74f, 0.281f),   //2
+            new Vector2(0.6f, 0.43f),     //3
+            new Vector2(0.845f, 0.8f),   //4
+            new Vector2(0.73f, 0.60f),    //5
+            new Vector2(0.96f, 0.60f),  //1 - 6
+            new Vector2(0.96f, 0.33f),  //1 - 7
+            new Vector2(.74f, 0.66f),   //2 - 8
+            new Vector2(.6f, 0.33f)     //3 - 9
+        };
+
+        Mesh mesh = GetComponent<MeshFilter>().mesh;
         mesh.Clear();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
+        mesh.uv = uvs;
+        mesh.Optimize();
         mesh.RecalculateNormals();
-
-        GetComponent<MeshFilter>().mesh = mesh;
     }
 }
