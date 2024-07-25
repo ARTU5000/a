@@ -18,16 +18,16 @@ public class Flauros : MonoBehaviour
     void Create()
     {
         Vector3[] vertices = {
-            new Vector3(0, 0, 0),         //0
-            new Vector3(.8f, 0, 0),       //1
-            new Vector3(.4f, 0, .7f),     //2
-            new Vector3( 0, .8f, .4f),    //3
-            new Vector3(.8f, .8f, .4f),   //4
-            new Vector3(.4f, .8f, -.3f),  //5
-            new Vector3(.8f, 0, 0),       //1 - 6
-            new Vector3(.8f, 0, 0),       //1 - 7
-            new Vector3(.4f, 0, .7f),     //2 - 8
-            new Vector3( 0, .8f, .4f)     //3 - 9
+            new Vector3(0, 0, 1),   // 0
+            new Vector3(1, 0, 0),   // 1
+            new Vector3(0, 1, 0),   // 2
+            new Vector3(-1, 0, 0),  // 3
+            new Vector3(0, 0, -1),  // 4
+            new Vector3(0, -1, 0),  // 5
+            new Vector3(1, 0, 0),   //1 - 6
+            new Vector3(1, 0, 0),   //1 - 7
+            new Vector3(0, 1, 0),   //2 - 8
+            new Vector3(-1, 0, 0)   //3 - 9
         };
 
         int[] triangles = {
@@ -43,16 +43,16 @@ public class Flauros : MonoBehaviour
 
 
         Vector2[] uvs = {
-            new Vector2(0.845f, 0.43f),   //0
+            new Vector2(0.8455f, 0.43f),  //0
             new Vector2(0.96f, 0.281f),   //1
             new Vector2(0.74f, 0.281f),   //2
             new Vector2(0.6f, 0.43f),     //3
-            new Vector2(0.845f, 0.8f),   //4
-            new Vector2(0.73f, 0.60f),    //5
-            new Vector2(0.96f, 0.60f),  //1 - 6
-            new Vector2(0.96f, 0.33f),  //1 - 7
-            new Vector2(.74f, 0.66f),   //2 - 8
-            new Vector2(.6f, 0.33f)     //3 - 9
+            new Vector2(0.8455f, 0.775f), //4
+            new Vector2(0.72f, 0.605f),   //5
+            new Vector2(0.96f, 0.60f),    //1 - 6
+            new Vector2(0.96f, 0.95f),    //1 - 7
+            new Vector2(.725f, 0.95f),    //2 - 8
+            new Vector2(.6f, 0.775f)      //3 - 9
         };
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
