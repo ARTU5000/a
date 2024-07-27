@@ -37,39 +37,39 @@ public class uvFlauros : MonoBehaviour
         };
 
         Vector2[] uvs0 = {
-            new Vector2(0.41f, 0.957f),  //0
+            new Vector2(0.41f, 0.957f),    //0
             new Vector2(0.534f, 0.787f),   //1
             new Vector2(0.284f, 0.787f),   //2
-            new Vector2(0.41f, 0.618f),     //3
+            new Vector2(0.41f, 0.618f),    //3
             new Vector2(0.6615f, 0.9575f), //3 - 4
-            new Vector2(0.1615f, 0.9575f),   //3 - 5
+            new Vector2(0.1615f, 0.9575f), //3 - 5
         };
 
         Vector2[] uvs1 = {
-            new Vector2(0.8455f, 0.43f),  //0
-            new Vector2(0.96f, 0.281f),   //1
-            new Vector2(0.74f, 0.281f),   //2
-            new Vector2(0.6f, 0.43f),     //3
-            new Vector2(0.8455f, 0.775f), //3 - 4
-            new Vector2(0.72f, 0.605f),   //3 - 5
+            new Vector2(0.265f, 0.43f),    //0
+            new Vector2(0.138f, 0.6f),     //1
+            new Vector2(0.384f, 0.6f),     //2
+            new Vector2(0.265f, 0.766f),   //3
+            new Vector2(0.011f, 0.43f),    //3 - 4
+            new Vector2(0.523f, 0.43f),    //3 - 5
         };
 
         Vector2[] uvs2 = {
-            new Vector2(0.8455f, 0.43f),  //0
-            new Vector2(0.96f, 0.281f),   //1
-            new Vector2(0.74f, 0.281f),   //2
-            new Vector2(0.6f, 0.43f),     //3
-            new Vector2(0.8455f, 0.775f), //3 - 4
-            new Vector2(0.72f, 0.605f),   //3 - 5
+            new Vector2(0.296f, 0.387f),   //0
+            new Vector2(0.276f, 0.327f),   //1
+            new Vector2(0.176f, 0.327f),   //2
+            new Vector2(0.3f, 0.042f),     //3
+            new Vector2(0.546f, 0.387f),   //3 - 4
+            new Vector2(0.05f, 0.387f),    //3 - 5
         };
 
         Vector2[] uvs3 = {
-            new Vector2(0.8455f, 0.43f),  //0
-            new Vector2(0.96f, 0.281f),   //1
-            new Vector2(0.74f, 0.281f),   //2
-            new Vector2(0.6f, 0.43f),     //3
-            new Vector2(0.8455f, 0.775f), //3 - 4
-            new Vector2(0.72f, 0.605f),   //3 - 5
+            new Vector2(0.6f, 0.042f),     //0
+            new Vector2(0.476f, 0.209f),   //1
+            new Vector2(0.73f, 0.209f),    //2
+            new Vector2(0.6f, 0.381f),     //3
+            new Vector2(0.353f, 0.042f),   //3 - 4
+            new Vector2(0.853f, 0.042f),   //3 - 5
         };
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
