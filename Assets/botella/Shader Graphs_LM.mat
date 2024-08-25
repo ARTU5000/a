@@ -62,7 +62,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _circle_radius: 0.109
-    - _edge: 0.49
+    - _edge: 0.37
     m_Colors:
     - _circle_color: {r: 1, g: 1, b: 1, a: 1}
     - _inColor: {r: 0.828472, g: 0.9150943, b: 0.53956026, a: 1}
