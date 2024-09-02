@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5878154070912517757, guid: 4202ea57bf0e78a44b958e3a6da7a5ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.0420897
       objectReference: {fileID: 0}
     - target: {fileID: 5878154070912517757, guid: 4202ea57bf0e78a44b958e3a6da7a5ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -775,13 +775,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2089939109669728867, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7176723853577622813, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.5502746
       objectReference: {fileID: 0}
     - target: {fileID: 7176723853577622813, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 0.87779814
       objectReference: {fileID: 0}
     - target: {fileID: 7176723853577622813, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -818,6 +822,18 @@ PrefabInstance:
     - target: {fileID: 7553390890218246055, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
       propertyPath: m_Name
       value: m2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339088011705797142, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339088011705797142, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339088011705797142, guid: 41a08d43026f29b4da70e83b48443b28, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
